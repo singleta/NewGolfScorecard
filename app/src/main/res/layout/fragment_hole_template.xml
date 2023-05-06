@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/redTee"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@android:color/transparent"-->
+<!--        android:contentDescription="@string/tees"-->
+<!--        android:src="@drawable/redtee"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/whiteTee"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@android:color/transparent"-->
+<!--        android:contentDescription="@string/tees"-->
+<!--        android:src="@drawable/whitetee"-->
+<!--        app:layout_constraintStart_toEndOf="@id/redTee"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/yellowTee"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@android:color/transparent"-->
+<!--        android:contentDescription="@string/tees"-->
+<!--        android:src="@drawable/yellowtee"-->
+<!--        app:layout_constraintStart_toEndOf="@id/whiteTee"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />-->
+
+    <TableLayout
+        android:id="@+id/teeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@id/approachDistanceLayout"
+        app:layout_constraintTop_toBottomOf="@id/approachTableLayout" />
+
+    <TableLayout
+        android:id="@+id/driveTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout">
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/approachTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/driveTableLayout">
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/approachDistanceLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/approachTableLayout" />
+
+    <TableLayout
+        android:id="@+id/puttsTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/approachDistanceLayout">
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/totalsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/approachDistanceLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
